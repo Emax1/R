@@ -7,7 +7,7 @@ tfc<-function(variable){
   totales<-c(sum(fi),sum(hi),sum(pi))
   pie(table((variable)))
   r<-rbind(atributos,totales)
-  View(r)
+  r
 }
 
 #Tabla de frecuencias para discretas (tfd)
@@ -20,5 +20,5 @@ tfd<-function(variable){
   barplot(table(variable))
   plot(table(variable))
   r<-rbind(atributos,totales)
-  View(r)
+  r
 }
