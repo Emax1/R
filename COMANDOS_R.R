@@ -33,7 +33,7 @@ calW<-function(v){
   w
 }
 
-#Tabla de frecuencia y gráfico de histograma (tfCont)
+#Tabla de frecuencia y grÃ¡fico de histograma (tfCont)
 tfCont<-function(v,w,nombre){
   k=1+3.32*log10(length(v))
   k=round(k)
@@ -65,7 +65,7 @@ tfCont<-function(v,w,nombre){
 }
 
 
-#Función para medidas de resumen
+#Funcion para medidas de resumen
 GrafC<-function(x){
   #media
   me=mean(x)
@@ -75,12 +75,12 @@ GrafC<-function(x){
   q1=as.numeric(quantile(x,0.25))
   q2=as.numeric(quantile(x,0.50))
   q3=as.numeric(quantile(x,0.75))
-  #MEDIDAS DE DISPERSIÓN
+  #MEDIDAS DE DISPERSIÃ“N
   #rango
   r=max(x)-min(x)
-  #Rango intercuartílico
+  #Rango intercuartÃ­lico
   iqr=q3-q1
-  #GRÁFICO DE CAJAS Y BIGOTES
+  #GRAFICO DE CAJAS Y BIGOTES
   #par(mfrow=c(1,2))
   boxplot(x,horizontal = TRUE)
   #plot(density(x, adjust = 5),col = 'black', lwd = 3)
@@ -146,7 +146,7 @@ nube_de_palabras<-function(texto){
   ################ GRAFICAMOS FRECUENCIA DE LAS PALABRAS
   
   barplot(dataletras[1:10,]$freq, las = 2, names.arg = dataletras[1:10,]$word,
-          col ="blue", main ="PALABRAS M�S FRECUENTES", ylab = "Frecuencia de palabras")
+          col ="blue", main ="PALABRAS MÁS FRECUENTES", ylab = "Frecuencia de palabras")
   
   
   ############ GRAFICAMOS LA NUBE DE PALABRAS
