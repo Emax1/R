@@ -145,8 +145,7 @@ nube_de_palabras<-function(texto){
   
   ################ GRAFICAMOS FRECUENCIA DE LAS PALABRAS
   
-  barplot(dataletras[1:10,]$freq, las = 2, names.arg = dataletras[1:10,]$word,
-          col ="blue", main ="PALABRAS MÁS FRECUENTES", ylab = "Frecuencia de palabras")
+  barplot(dataletras[1:10,]$freq, las = 2, names.arg = dataletras[1:10,]$word,col ="blue", main ="PALABRAS MÁS FRECUENTES", ylab = "Frecuencia de palabras")
   
   
   ############ GRAFICAMOS LA NUBE DE PALABRAS
