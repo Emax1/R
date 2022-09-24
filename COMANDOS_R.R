@@ -33,7 +33,7 @@ calW<-function(v){
   w
 }
 
-#Tabla de frecuencia y grÃ¡fico de histograma (tfCont)
+#Tabla de frecuencia y grafico de histograma (tfCont)
 tfCont<-function(v,w,nombre){
   k=1+3.32*log10(length(v))
   k=round(k)
@@ -75,10 +75,10 @@ GrafC<-function(x){
   q1=as.numeric(quantile(x,0.25))
   q2=as.numeric(quantile(x,0.50))
   q3=as.numeric(quantile(x,0.75))
-  #MEDIDAS DE DISPERSIÃ“N
+  #MEDIDAS DE DISPERSION
   #rango
   r=max(x)-min(x)
-  #Rango intercuartÃ­lico
+  #Rango intercuartico
   iqr=q3-q1
   #GRAFICO DE CAJAS Y BIGOTES
   #par(mfrow=c(1,2))
